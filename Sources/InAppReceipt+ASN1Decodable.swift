@@ -81,7 +81,7 @@ extension _InAppReceipt
 
 extension InAppReceiptPayload: ASN1Decodable
 {
-	static var template: ASN1Template
+	public static var template: ASN1Template
 	{
 		return ASN1Template.universal(ASN1Identifier.Tag.octetString)
 	}
@@ -96,7 +96,7 @@ extension InAppReceiptPayload: ASN1Decodable
 		}
 	}
 	
-	init(from decoder: Decoder) throws
+	public init(from decoder: Decoder) throws
 	{
 		let asn1d = decoder as! ASN1DecoderProtocol
 		

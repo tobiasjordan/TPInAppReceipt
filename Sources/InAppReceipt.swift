@@ -46,7 +46,7 @@ public class InAppReceipt
     
     /// Payload of the receipt.
     /// Payload object contains all meta information.
-	internal var payload: InAppReceiptPayload { receipt.payload }
+	public var payload: InAppReceiptPayload { receipt.payload }
     
     /// root certificate path, used to check signature
     /// added for testing purpose , as unit test can't read main bundle
